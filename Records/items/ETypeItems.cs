@@ -2,5 +2,5 @@ namespace Records.items;
 
 public enum ETypeItems
 {
-    Helmet,ChestPlate,Boot
+    Helmet,ChestPlate,Boot,Weapon
 }

@@ -19,7 +19,7 @@ public class Character
 
     public void TakeDamage(int damage)
     {
-        this.health -= dommage;
+        this.health -= 5;
     }
 
     public void UseItem(Weapon weapon)

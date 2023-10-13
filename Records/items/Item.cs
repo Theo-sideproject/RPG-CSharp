@@ -10,11 +10,23 @@ public class Item
     protected ETypeItems type;
 
 
-    public Item(string name,int boostDmg,int health)
+    public Item(string name,int boostDmg,int health,ETypeItems typeItems)
     {
         this.name = name;
         this.health = health;
         this.boostDmg = boostDmg;
+        this.type = typeItems;
+    }
+
+    public void Show()
+    {
+        Console.WriteLine("Item name :" + name);
+        Console.WriteLine("Item Dmg :" + boostDmg);
+    }
+
+    public override string ToString()
+    {
+        return $"Nom: {name}, type: {type}, boost : {health}h,{boostDmg}d";
     }
 
 }

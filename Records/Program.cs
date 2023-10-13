@@ -18,5 +18,7 @@ internal class Program
         mage2.Attack(mage1);
 
         mage1.Show();
+
+        Console.WriteLine("\n\n" +epee);
     }
 }

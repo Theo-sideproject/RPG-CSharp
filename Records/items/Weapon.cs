@@ -1,19 +1,14 @@
+using Records;
+using Records.items;
+
 namespace Caracter;
 
-public class Weapon
+public class Weapon : Item
 {
     public int WeaponDamage { get; protected set; }
-    public string name { get; protected set; }
 
-    public Weapon(string name,int dmg)
+    public Weapon(string name, int dmg) : base(name, dmg, 0, ETypeItems.Weapon)
     {
-        this.name = name;
-        this.WeaponDamage = dmg;
-    }
 
-    public void Show()
-    {
-        Console.WriteLine("Weapon name :"+ name);
-        Console.WriteLine("Weapon Dmg :"+ WeaponDamage);
     }
 }
